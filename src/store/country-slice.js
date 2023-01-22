@@ -24,4 +24,6 @@ const countrySlice = createSlice({
 	},
 });
 
-export default cartSlice;
+export const countryActions = countrySlice.actions;
+
+export default countrySlice;
