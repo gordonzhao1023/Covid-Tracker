@@ -8,18 +8,20 @@ const countrySlice = createSlice({
 		countryInput: '',
 		countryData: {
 			confirmCases: null,
-			activeCases: null,
 			deathCases: null,
-			recoveredCases: null,
 		},
 	},
 	reducers: {
 		setCountryInput(state, action) {
 			state.countryInput = action.payload;
 		},
+		// NEED TO DETERMINE IF WE ACTUALLY NEED A SEPERATE FUNCTION
 		setCountryData(state, action) {
 			const data = action.payload;
-			countryData = Object.assign(countryData, data);
+			state.countryData = Object.assign(state.countryData, data);
+		},
+		toggleLoading(state) {
+			state.loading = !state.loading;
 		},
 	},
 });
