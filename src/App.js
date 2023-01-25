@@ -1,17 +1,16 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import CountryDetail from './CountryDetail';
+import Header from './Header';
 import { fetchCountryData } from './store/search-action';
-import Card from './UI/Card';
+import Layout from './UI/Layout';
 
 const App = () => {
-	let country = 'China';
-	const dispatch = useDispatch();
-	const data = dispatch(fetchCountryData(country));
-	console.log(data);
 	return (
-		<Card>
-			<h1>HI!!!</h1>
-		</Card>
+		<Layout>
+			<Header />
+			<CountryDetail />
+		</Layout>
 	);
 };
 
