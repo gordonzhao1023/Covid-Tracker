@@ -1,8 +1,12 @@
 .card {
 	margin: 1rem auto;
-	border-radius: 6px;
+	border-radius: 60px;
 	background-color: white;
 	padding: 1rem;
-	width: 90%;
+	/* width: 100%; */
 	max-width: 40rem;
+	border-color: aqua;
+	width: 600px;
+	height: 702px;
+	background-color: aqua;
 }
