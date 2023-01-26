@@ -3,8 +3,8 @@
 	border-radius: 60px;
 	background-color: #d9d9d9;
 	padding: 2rem;
-	/* max-width: 40rem; */
 	border: 6px solid orange;
 	width: 40%;
-	height: 600px;
+	height: 650px;
+	box-sizing: border-box;
 }
