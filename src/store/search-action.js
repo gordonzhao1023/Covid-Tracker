@@ -30,10 +30,11 @@ export const fetchCountryData = (country) => {
 			const countryData = await fetchData();
 			dispatch(
 				countryActions.setCountryData({
-					confirmedCases: countryData.data.confirmed,
+					confirmCases: countryData.data.confirmed,
 					deathCases: countryData.data.deaths,
 				})
 			);
+			dispatch(countryActions.setCountryInput(countryData.data.location));
 		} catch (err) {
 			console.log(err);
 		}
