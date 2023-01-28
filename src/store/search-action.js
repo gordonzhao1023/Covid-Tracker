@@ -3,6 +3,7 @@ import { countryActions } from './country-slice';
 export const fetchCountryData = (country) => {
 	return async (dispatch) => {
 		const fetchData = async () => {
+			dispatch(countryActions.toggleLoading());
 			const options = {
 				method: 'GET',
 				headers: {
@@ -28,6 +29,7 @@ export const fetchCountryData = (country) => {
 
 		try {
 			const countryData = await fetchData();
+			dispatch(countryActions.toggleLoading());
 			dispatch(
 				countryActions.setCountryData({
 					confirmCases: countryData.data.confirmed,

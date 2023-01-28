@@ -4,12 +4,14 @@ import CountryDetail from './CountryDetail';
 import Header from './Header';
 import { fetchCountryData } from './store/search-action';
 import Layout from './UI/Layout';
+import Loader from './UI/Loader';
 
 const App = () => {
+	const isLoading = useSelector((state) => state.country.loading);
 	return (
 		<Layout>
 			<Header />
-			<CountryDetail />
+			{isLoading ? <Loader /> : <CountryDetail />}
 		</Layout>
 	);
 };

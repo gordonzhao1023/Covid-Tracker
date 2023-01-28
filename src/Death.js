@@ -6,7 +6,7 @@ import classes from './Svg.module.css';
 const Death = () => {
 	const deathNumber = useSelector(
 		(state) => state.country.countryData.deathCases
-	);
+	).toLocaleString();
 	return (
 		<React.Fragment>
 			{/* <object type='image/svg+xml' data='image.svg'>

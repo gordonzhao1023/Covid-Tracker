@@ -6,14 +6,13 @@ import classes from './Svg.module.css';
 const ConfirmedCases = () => {
 	const confirmedNumber = useSelector(
 		(state) => state.country.countryData.confirmCases
-	);
+	).toLocaleString();
 
 	return (
 		<React.Fragment>
 			<img src={confirmImage} alt='ConfirmedCases' className={classes.svg} />
 			<h2>
-				CONFIRMED:
-				<span>{confirmedNumber}</span>
+				CONFIRMED: <span>{confirmedNumber}</span>
 			</h2>
 		</React.Fragment>
 	);
