@@ -23,6 +23,9 @@ const countrySlice = createSlice({
 		toggleLoading(state) {
 			state.loading = !state.loading;
 		},
+		toggleError(state) {
+			state.error = !state.error;
+		},
 	},
 });
 

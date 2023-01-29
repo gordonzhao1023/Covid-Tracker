@@ -23,6 +23,8 @@ export const fetchCountryData = (country) => {
 			}
 
 			const data = await response.json();
+			if (data.data.location === 'Global')
+				dispatch(countryActions.toggleError());
 			// console.log(data);
 			return data;
 		};
