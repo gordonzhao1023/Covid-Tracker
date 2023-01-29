@@ -6,6 +6,7 @@ import React, { useRef } from 'react';
 import { fetchCountryData } from './store/search-action';
 import { useDispatch, useSelector } from 'react-redux';
 import { createKeywordTypeNode } from 'typescript';
+import classes from './Header.module.css';
 
 const Header = () => {
 	const dispatch = useDispatch();
@@ -30,6 +31,7 @@ const Header = () => {
 					id='country-search'
 					placeholder='Search Country Names'
 					ref={countryRef}
+					className={classes.search}
 				/>
 				<button>SEARCH</button>
 			</form>
