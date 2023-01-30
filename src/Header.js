@@ -19,17 +19,17 @@ const Header = () => {
 		e.preventDefault();
 		const currentCountry = countryRef.current.value;
 		dispatch(fetchCountryData(currentCountry));
-		console.log(confirmed);
+		// console.log(confirmed);
 	};
 
 	return (
 		<React.Fragment>
-			<h1>Country</h1>
-			<form onSubmit={fetchCountryDataHandler}>
+			<h1 className={classes.title}>Covid Statistics by Country </h1>
+			<form onSubmit={fetchCountryDataHandler} className={classes.form}>
 				<input
 					type='search'
 					id='country-search'
-					placeholder='Search Country Names'
+					placeholder='Search Country Name Here...'
 					ref={countryRef}
 					className={classes.search}
 				/>

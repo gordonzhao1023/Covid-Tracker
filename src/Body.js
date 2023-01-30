@@ -4,7 +4,7 @@ import Death from './Death';
 import Loader from './UI/Loader';
 import { useDispatch, useSelector } from 'react-redux';
 
-const CountryDetail = () => {
+const Body = () => {
 	const countryName = useSelector((state) => state.country.countryInput);
 	const isLoading = useSelector((state) => state.country.loading);
 
@@ -23,4 +23,4 @@ const CountryDetail = () => {
 	return <Card>{content}</Card>;
 };
 
-export default CountryDetail;
+export default Body;
