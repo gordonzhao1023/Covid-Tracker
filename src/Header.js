@@ -5,15 +5,14 @@
 import React, { useRef } from 'react';
 import { fetchCountryData } from './store/search-action';
 import { useDispatch, useSelector } from 'react-redux';
-import { createKeywordTypeNode } from 'typescript';
 import classes from './Header.module.css';
 
 const Header = () => {
 	const dispatch = useDispatch();
 	const countryRef = useRef('');
-	const confirmed = useSelector(
-		(state) => state.country.countryData.confirmCase
-	);
+	// const confirmed = useSelector(
+	// 	(state) => state.country.countryData.confirmCase
+	// );
 
 	const fetchCountryDataHandler = (e) => {
 		e.preventDefault();

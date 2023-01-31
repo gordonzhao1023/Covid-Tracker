@@ -1,8 +1,8 @@
-import Card from './UI/Card';
+// import Card from './UI/Card';
 import ConfirmedCases from './ConfirmCases';
 import Death from './Death';
-import Loader from './UI/Loader';
-import { useDispatch, useSelector } from 'react-redux';
+// import Loader from './UI/Loader';
+import { useSelector } from 'react-redux';
 import classes from './CountryDetail.module.css';
 
 const CountryDetail = () => {
