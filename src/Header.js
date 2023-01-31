@@ -24,7 +24,7 @@ const Header = () => {
 
 	return (
 		<React.Fragment>
-			<h1 className={classes.title}>Covid Statistics by Country!!!</h1>
+			<h1 className={classes.title}>Covid Statistics by Country!!</h1>
 			<form onSubmit={fetchCountryDataHandler} className={classes.form}>
 				<input
 					type='search'

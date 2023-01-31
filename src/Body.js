@@ -1,8 +1,6 @@
 import Card from './UI/Card';
-import ConfirmedCases from './ConfirmCases';
-import Death from './Death';
 import Loader from './UI/Loader';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import CountryDetail from './CountryDetail';
 
 const Body = () => {
