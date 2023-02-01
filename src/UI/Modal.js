@@ -47,7 +47,7 @@ const Modal = (props) => {
 						The country you entered does not exist. You will now see Global
 						data!
 					</p>
-					<button onClick={exitHandler}>Got it!!</button>
+					<button onClick={exitHandler}>Got it!</button>
 				</motion.div>
 			</motion.div>
 		</AnimatePresence>

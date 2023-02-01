@@ -19,9 +19,23 @@
 
 .modal button {
 	color: #444;
-	border-color: #444;
 	font-weight: bold;
 	margin-top: 20px;
+	cursor: pointer;
+	border: 1px solid black;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+.modal button:hover,
+.modal button:active {
+	background-color: blanchedalmond;
+	scale: 1.1;
+}
+
+.modal button:focus {
+	outline-color: transparent;
+	outline-style: solid;
 }
 
 .modal p {
