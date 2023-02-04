@@ -3,7 +3,7 @@
 }
 
 .search {
-	width: 80%;
+	width: 75%;
 	height: 40px;
 	border-radius: 35px;
 	padding: 12px 20px;
@@ -15,6 +15,7 @@
 .form {
 	display: flex;
 	justify-content: space-between;
+	gap: 10px;
 }
 
 .form button {
